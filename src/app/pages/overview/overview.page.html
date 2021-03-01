@@ -1,0 +1,40 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false">
+        <ion-icon src="./assets/icon/custom-menu.svg"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-item slot="end" color="light" lines="none" detail="false">
+      <ion-input type="text" autocorrect="true" placeholder="What are your looking for ?"></ion-input>
+      <ion-button size="meduim" color="success" slot="end" shape="round">
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+     </ion-item>
+    <!-- <ion-searchbar class="search_box ion-no-border" animated type="text" mode="ios" autocorrect="true" color="light" placeholder="What are your looking for ?"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button color="success" shape=round>
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <category-button></category-button>
+
+    <ion-list-header>
+      <ion-label><h2 class="fs-18 bold">Popular Foods</h2></ion-label>
+      <ion-button style="margin-right: 10px" class="fs-10 bold" size="small" color="success" fill="outline" shape="round">View All</ion-button>
+    </ion-list-header>
+    <items-slide></items-slide>
+
+    <ion-list-header>
+      <ion-label><h2 class="fs-18 bold">Special Offers</h2></ion-label>
+      <ion-button style="margin-right: 10px" class="fs-10 bold" size="small" color="success" fill="outline" shape="round">View All</ion-button>
+    </ion-list-header>
+    <items-slide></items-slide>
+
+  </ion-list>
+</ion-content>

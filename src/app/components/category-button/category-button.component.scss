@@ -1,0 +1,16 @@
+:host {
+    ion-slides {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    ion-item {
+        border-radius: 10px !important;;
+        --min-height: 50px;
+        min-width: 155px;
+        // padding: 10px 50px !important;
+        --background: #ade8c5 !important;
+        ion-icon {
+            margin-right: 10px !important;
+        }
+    }
+}

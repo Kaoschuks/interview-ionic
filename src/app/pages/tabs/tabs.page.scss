@@ -1,0 +1,79 @@
+
+ion-tabs {
+    ion-tab-bar {
+        // --background: var(--transparent) !important;
+        // position: absolute;
+        bottom: 0;
+        z-index: 99999;
+        width: 100%;
+        left: 0;
+        --ripple-color: var(--transparent) !important;
+
+        ion-tab-button {
+            --ripple-color: var(--transparent) !important;
+            margin-top: 2px !important;
+
+            ion-label {
+                margin-top: 2px !important;
+                font-size: .5rem;
+                font-weight: 600 !important;
+            }
+
+            ion-icon, i {
+                position: relative;
+                margin: 0 auto;
+                transition: all .3s;
+                margin-top: 3px;
+
+                &.before {
+                    font-size: 25px;
+                    transition: all .3s;
+                }
+
+                &.after {
+                    font-size: 0px;
+                    transition: all .3s;
+                }
+
+            }
+
+            &.tab-selected {
+
+                ion-label {
+                    color: var(--ion-color-primary);
+                    font-size: .5rem;
+                    font-weight: 600;
+                    // margin-bottom: -2px;
+                    margin-top: 2px !important;
+                }
+                ion-icon, i {
+                    color: var(--ion-color-primary);
+                    margin: 0 auto;
+                    transition: all .3s;
+                    margin-bottom: 3px;
+                    &.before {
+                        font-size: 0px;
+                        transition: all .3s;
+                    }
+
+                    &.after {
+                        font-size: 25px;
+                        transition: all .3s;
+                    }
+                }
+            }
+
+            &.add_video_button.md {
+                margin-bottom: 3px !important;
+            }
+            &.add_video_button {
+                ion-icon, i {
+                    // background-color: #e0ae085d !important;
+                    font-size: 40px !important;
+                    padding: 15px !important;
+                    border-radius: 100% !important;
+                }
+            }
+        }
+    }
+}

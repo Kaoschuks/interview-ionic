@@ -1,0 +1,14 @@
+ion-header ion-toolbar {
+    ion-item {
+        border-radius: 30px !important;
+        width: 85% !important;
+        margin-left: 20px !important;
+        ion-button {
+            margin-right: -15px !important;
+        }
+    }
+}
+
+ion-list-header {
+    margin-top: 10px !important;
+}

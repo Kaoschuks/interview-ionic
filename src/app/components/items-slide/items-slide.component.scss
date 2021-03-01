@@ -1,0 +1,30 @@
+:host {
+    ion-slides {
+        margin-left: 5px;
+    }
+    ion-card {
+        background-size: cover !important;
+        height: 170px;
+        // width: 10 !important;
+        width: calc(100vw - 30px);
+        margin: 0px 2px !important;
+        * {
+            color: #fff !important;
+            text-shadow: #333 !important;
+        }
+        footer {
+            position: absolute !important;
+            bottom: 0px !important;
+            width: 100%;
+            left: 2px;
+            padding: 5px;
+            ion-card-title {
+                margin-bottom: -10px;
+            }
+            ion-row {
+                margin-top: -10px;
+                margin-left: -5px;
+            }
+        }
+    }
+}
